@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.movie-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #95dada;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.movie-container:hover {
+  transform: scale(1.05);
+}
+.movie-container img {
+  margin-bottom: 1rem;
+}
+.movieOperation {
+    padding: 25px;
+}
+
+.form-control{
+  width: 50%;
+}
+
+button.btn.btn-link.addMovie {
+  float: right;
+}
+
+.movieBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  float: right;
+  position: absolute;
+  right: 12px;
+  top: 133px;
+}
+
